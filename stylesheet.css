@@ -1,0 +1,148 @@
+.grid {
+  border: 2px transparent solid;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 5vh 13% 13% 13%;
+  grid-row-gap: 20px;
+  grid-column-gap: 4%;
+}
+
+h1 {
+	font-size: 45px;
+	text-align: center; 
+	font-family: "Oleo Script";
+}
+
+h2 { 
+	font-size: 35px;
+	font-family: "Oleo Script";
+	color: #a2c3f9;
+	
+}
+
+.box {
+  border-radius: 5px;
+  border: 2px transparent solid;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: span 1 ;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  background-color: white;
+}
+
+.two {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  background-color: white;
+}
+
+.three {
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	background-color: white;
+}
+
+.four {
+	grid-column-start: 4;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	background-color: white;
+}
+
+.main {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: span 10;
+}
+
+
+header {
+	color: white;
+	background-color: #00284d;
+	grid-area: center;
+}
+
+
+/*background-image: url("images/vintage.jpg");*/
+body {
+	font-family: "Oswald";
+	background-color: #00284d;
+}
+
+.navbar {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+	top: 0;
+	width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.active {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+    background-color: red;
+}
+
+@font-face {
+	font-family: "Oswald";
+	src: url("Oswald-Regular.ttf");
+	}
+
+@font-face {
+	font-family: "Oleo Script";
+	src: url("OleoScript-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Special Elite";
+	src: url("SpecialElite.ttf");
+}
+
+h4 {
+	font-family: "Special Elite";
+	color: #a2c3f9;
+}
+
+p {
+	font-family: "Special Elite";
+	color: white;
+}
+
+h3 {
+	font-family: "Oswald";
+	color: white;
+	font-size: 30px;
+}
